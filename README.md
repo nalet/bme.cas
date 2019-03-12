@@ -26,7 +26,7 @@ On your segmentation mask, two vertebrae are connected by 1 voxel.
 The most basic morphological operations are dilation and erosion. In this case, an erosion-based algorithm would be the most suitable, as it groups voxels with similar values. The structure, for example, the disks in the spinal cord have small spaces in between them. That is enough for the algorithm to group them.
 
 ### Your CT image has salt & pepper noise. How would you preprocess the image to improve your segmentation? ###
-A median filter our a Gauss filter would come handy in this situation. The Gausfillter would make the noise and the whole image blurry. The median filter can handle the noise much better and in the end, the noise is almost not visible any more.
+A median filter or a Gauss filter would come handy in this situation. The Gausfillter would make the noise and the whole image blurry. The median filter can handle the noise much better and in the end, the noise is almost not visible any more.
 
 ### You want to plan a trajectory for a pedicle screw placement on your 3D model. What information do you need to define this trajectory? ###
 
