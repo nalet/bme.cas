@@ -30,7 +30,7 @@ A median filter or a Gauss filter would come handy in this situation. The Gausfi
 
 ### You want to plan a trajectory for a pedicle screw placement on your 3D model. What information do you need to define this trajectory? ###
 
-From an image perspective, structures with high intensity are interesting for the planning as it could indicate veins, nerves or bones. So good segmentation is mandatory to find a clear path to the goal.
+From an imaging perspective, structures with high intensity are interesting for the planning as it could indicate veins, nerves or bones. So good segmentation is mandatory to find a clear path to the goal.
 
 ### Which algorithm can you use to get a surface model from your segmentation? ###
 The keyword is edge detection. The surface of an object separates two intensity region in the body. An example would be bone and muscle. Many algorithms, such as morphological or gradient based can be used.
