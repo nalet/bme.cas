@@ -16,7 +16,7 @@ Using `python cas\test_installation.py`
 ## Assignment 1 - Planning ##
 
 ![result assignment planning](assignments/planning/result.png)
-> Result of the planning assigment
+> Result of the planning assigment [output.txt](assignments/planning/output.txt)
 
 There are many ways of implementing region growing algorithms for image segmentation. The two most famous algorithms are Flood fill and the Watershed algorithm. Both have its pros and cons. As Flood fill is fast but less smooth, Watershed points with smooth but slower processing. The current implementation in this assignment is based on the Flood fill algorithm. It was much easier to implement and it is also fast. Additionally, the algorithm would provide a radius parameter. In our case, this leads to much worse results as the resolution of the data is very narrow.
 So the main point in our algorithm is to choose a neighbor with a radius of one and compare it with the seed point. The sensitivity parameter in the algorithm defines how much the intensity value of the voxel can differ from this seed point. If it's in the range it becomes a candidate for further explorations of additional neighbors. So in our algorithm, every voxel in the very neighborhood can only differ with an absolute value of 40.
