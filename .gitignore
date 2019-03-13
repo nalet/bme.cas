@@ -108,3 +108,6 @@ venv.bak/
 .mypy_cache/
 .idea/
 data/pelvis/
+
+#vscode
+.vscode/settings.json
