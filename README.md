@@ -60,7 +60,32 @@ Pt is in the marker cordinate system.
 ### Write down the formula to get the tip of the pointer in the camera coordinate system ###
 Pp = Pt + Fi
 ### Where does the error in your result come from (what you get is not the exact solution which is provided)? ###
-Pt and Fi are constant, we define them in our
+There are different influencing factors. It begins with the design of the rigid body and in the end the update rate, the sensore calibration and more. All these factors give us the error in the result.
 ### How many degrees of freedeom can you calibrate with pivoting? Which ones are missing? ###
-5 DOF 
+There are six degrees of freedom (6DoF) to the freedom of movement of a rigid body in three-dimensional space.
+
+**Translational envelopes:**
+* Moving forward and backward on the X-axis. (Surge)
+* Moving left and right on the Y-axis. (Sway)
+* Moving up and down on the Z-axis. (Heave)
+
+**Rotational envelopes:**
+* Tilting side to side on the X-axis. (Roll)
+* Tilting forward and backward on the Y-axis. (Pitch)
+* Turning left and right on the Z-axis. (Yaw)
+
+**Check**
+![result assignment planning](assignments/toolcalibration/6DOF_en.jpg)
+> Six degrees of freedom - https://en.wikipedia.org/wiki/Six_degrees_of_freedom
+
+DoF | Explanation
+--- | ---
+Surge | No, the marker can not move forward and backward
+Sway | No, the marker can not move right and left
+Heave | No, the marker can not move up and down
+Roll | Yes, the marker can roll
+Pitch | No, the marker can not pitch
+Yaw | Yes, the marker can Yaw
+
 ### If your instrument is non-rigid (e.g. a needle) your pt is off if your instrument is bent. How can you overcome this issue? ###
+One could optical sensor linkages to measure torsion and flexion of fiber optic cable to determine position and pose along the entrie length of the device.
