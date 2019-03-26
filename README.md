@@ -53,14 +53,14 @@ Let's imagine a cube with the edge of 100 by 100 by 100. The cube would have a v
     0.0005346266115642019
     Successful
 
-> Result of the tool calibration assigment
+> Result of the tool calibration assigment [output.txt](assignments/toolcalibration/output.txt)
 
-### In which coordinate system is the vector Pt ###
-Pt is in the marker cordinate system.
+### In which coordinate system is the vector P<sub>t</sub> ###
+P<sub>t</sub> is in the marker coordinate system.
 ### Write down the formula to get the tip of the pointer in the camera coordinate system ###
-Pp = Pt + Fi
+P<sub>p</sub> = P<sub>t</sub> + F<sub>i</sub>
 ### Where does the error in your result come from (what you get is not the exact solution which is provided)? ###
-There are different influencing factors. It begins with the design of the rigid body and in the end the update rate, the sensore calibration and more. All these factors give us the error in the result.
+There are different influencing factors. It begins with the design of the rigid body and can come down to the update rate, the sensor calibration and more. All these factors give us the error in the result.
 ### How many degrees of freedeom can you calibrate with pivoting? Which ones are missing? ###
 There are six degrees of freedom (6DoF) to the freedom of movement of a rigid body in three-dimensional space.
 
@@ -87,5 +87,5 @@ Roll | Yes, the marker can roll
 Pitch | No, the marker can not pitch
 Yaw | Yes, the marker can Yaw
 
-### If your instrument is non-rigid (e.g. a needle) your pt is off if your instrument is bent. How can you overcome this issue? ###
-One could optical sensor linkages to measure torsion and flexion of fiber optic cable to determine position and pose along the entrie length of the device.
+### If your instrument is non-rigid (e.g. a needle) your P<sub>t</sub> is off if your instrument is bent. How can you overcome this issue? ###
+One could optical sensor linkages to measure torsion and flexion of fibre optic cable to determine position and pose along the entire length of the device. It is also possible to track the shape of the device itself.
