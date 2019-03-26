@@ -14,9 +14,9 @@ def pivot_calibration(transforms):
     b = []
 
     for item in transforms:
-        A.append(np.append(item[0,[0,1,2]],[-1,0,0]))
-        A.append(np.append(item[1,[0,1,2]],[0,-1,0]))
-        A.append(np.append(item[2,[0,1,2]],[0,0,-1]))
+        A.append(np.append(item[0,[0,1,2]],[1,0,0]))
+        A.append(np.append(item[1,[0,1,2]],[0,1,0]))
+        A.append(np.append(item[2,[0,1,2]],[0,0,1]))
         b.append((item[0,[3]]))
         b.append((item[1,[3]]))
         b.append((item[2,[3]]))

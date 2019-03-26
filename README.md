@@ -38,3 +38,29 @@ The keyword is edge detection. The surface of an object separates two intensity 
 
 ### If you downsample your 3D CT image by a factor of 2 in all dimensions, how much faster or slower will your algorithm get? ###
 Let's imagine a cube with the edge of 100 by 100 by 100. The cube would have a volume of 100 to the third power. This equals to 100000. So by shorting all edges by half, wight would equal to a cube of 50 by 50 by 50 with a volume of 125000. The volume correspondents to our voxels in our image. Cutting the edge by half gives us 8 times fewer voxels. So an algorithm would be 8 times faster, as it just has to process an 8th.
+
+## Assignment 2 - Planning ##
+    Calibtration matrix T
+    [[  1.           0.           0.         208.41819488]
+    [  0.           1.           0.          -0.64329634]
+    [  0.           0.           1.         -33.13140004]
+    [  0.           0.           0.           1.        ]]
+    Offset vector p_t:
+    [[208.41819488]
+    [ -0.64329634]
+    [-33.13140004]]
+    Error of T
+    0.0005346266115642019
+    Successful
+
+> Result of the tool calibration assigment
+
+### In which coordinate system is the vector Pt ###
+Pt is in the marker cordinate system.
+### Write down the formula to get the tip of the pointer in the camera coordinate system ###
+Pp = Pt + Fi
+### Where does the error in your result come from (what you get is not the exact solution which is provided)? ###
+Pt and Fi are constant, we define them in our
+### How many degrees of freedeom can you calibrate with pivoting? Which ones are missing? ###
+5 DOF 
+### If your instrument is non-rigid (e.g. a needle) your pt is off if your instrument is bent. How can you overcome this issue? ###
