@@ -94,12 +94,12 @@ One could optical sensor linkages to measure torsion and flexion of fibre optic 
 ![result assignment planning](assignments/registration/result.png)
 > Result of matched points in 46 iterations - [output.txt](assignments/registration/output.txt)
 ### What happens if you use an identity as initial pose? ###
-A wrong identity, which does not contribute to a good estimate will lead to many-to-one matches. [Computer Vision Systems: 10th International Conference - Page 304]
+An identity as initial pose will lead to a local minimum. The desired result is a global minimum.
 ### Describe two methods, how you can acquire the target data in the OR. ###
-To get data, you can use anatomical landmarks, surfaces or artificial fiducials. Best results can be achived with surfaces with a high mesh densitiy.
+To get data, you can use anatomical landmarks, surfaces or artificial fiducials. Best results can be achieved with surfaces with a high mesh density. These data points can come from an MRI, CT or even a stereo camera.
 ### What is the minimum number of points you need for paired points matching? ###
-3 at least. The difficulty of those landmarks is, that there are difficult to find. Usually there will be more errors in finding the points.
+3 at least. The difficulty of those landmarks is, that there are difficult to find. Usually, there will be more errors in finding the points.
 ### If the patient moves, your calculated transformation is not accurate anymore. How can you prevent this? ###
-You can attach a mark to the patient (eg. bone) to have a reference point which you than can calculate your errors form. So you will always have a good transformation with less errors.
+You can attach a mark to the patient (e.g. bone) to have a reference point which you then can calculate your errors form. So, you will always have a good transformation with fewer errors. These are also called fiducials.
 ### We are in ENT surgery now. Which anatomical landmarks do you take for paired points matching and which surface for ICP. Explain why? ###
-We will use Bone formations, fissures, points, peaks, bifurcations, joints, etc and then using a tracked pointer or manual picking to identify thouse in our system. This is nessecary to identify a comon point in our virtual object and in the physical world. Otherwise much more calculations must be made for a good image.
+The difficulty in ENT surgery is to get landmarks close to the workspace of the surgeon. This is quite difficult, because of close landmarks are difficult to add without surgery, which allows us to place landmarks inside of the body. For an accurate result is the closer the better the rule of thumb from an error perspective view.
