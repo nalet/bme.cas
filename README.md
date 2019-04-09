@@ -89,3 +89,16 @@ Yaw | Yes, the marker can Yaw
 
 ### If your instrument is non-rigid (e.g. a needle) your P<sub>t</sub> is off if your instrument is bent. How can you overcome this issue? ###
 One could optical sensor linkages to measure torsion and flexion of fibre optic cable to determine position and pose along the entire length of the device. It is also possible to track the shape of the device itself.
+
+## Assignment 3 - Registration ##
+![result assignment planning](assignments/registration/result.png)
+> Result of matched points in 46 iterations - [output.txt](assignments/registration/output.txt)
+### What happens if you use an identity as initial pose? ###
+
+### Describe two methods, how you can acquire the target data in the OR. ###
+
+### What is the minimum number of points you need for paired points matching? ###
+
+### If the patient moves, your calculated transformation is not accurate anymore. How can you prevent this? ###
+
+### We are in ENT surgery now. Which anatomical landmarks do you take for paired points matching and which surface for ICP. Explain why? ###
